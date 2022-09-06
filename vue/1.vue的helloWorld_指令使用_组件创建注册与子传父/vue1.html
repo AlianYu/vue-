@@ -1,0 +1,47 @@
+<!--
+ * @Author: 余林倩
+ * @Date: 2022-08-29 14:47:00
+ * @LastEditors: 余林倩
+ * @LastEditTime: 2022-09-06 13:54:14
+ * @Description: 请填写该文件的用途
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- vue的helloWorld 
+v-bind指令：动态绑定
+-->
+
+<body>
+    <div id="app">{{message}}--{{message+'!'}}
+        <div id="msg"></div>
+        <div v-bind:id="message"></div>
+        <h1>{{name}}</h1>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        // var app = new Vue({
+        //     el: '#app',
+        //     data: {
+        //         message: 'Vue'
+        //     },
+        // })
+        var app = new Vue({
+            el: '#app',
+            data: {
+                name: '张三',
+                message: 123,
+            }
+        })
+    </script>
+
+</body>
+
+</html>

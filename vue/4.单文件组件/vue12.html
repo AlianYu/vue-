@@ -1,0 +1,103 @@
+<!--
+ * @Author: 余林倩
+ * @Date: 2022-08-30 09:25:24
+ * @LastEditors: 余林倩
+ * @LastEditTime: 2022-08-31 16:51:16
+ * @Description: 请填写该文件的用途
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+    https://cli.vuejs.org/ 
+    vue -V
+    单文件组件理解：我们使用脚手架生成了vue01项目
+    当中app.vue就是一个单文件 ，一个单文件就是一个组件
+
+    双向绑定和单向数据流不冲突
+    双向绑定：当数据发生改变时，视图也发生改变；当视图发生改变时，数据也发生改变
+    v-model指令是语法糖  其实是value属性和input事件的简写
+
+    虚拟dom和key属性
+    节点树  就是虚拟dom  移动 删除新建 
+    为啥v-for要带属性key  就是因为vue底层需要知道节点树是怎么改变的
+
+    数据驱动，只有改变数据才能改变视图，不能直接更改dom
+    数据来源：来自父元素的属性，组件自身的状态data，vueX等
+    状态data  状态是组件自身的数据
+    属性props  属性是来自父组件的数据
+    状态的改变未必会触发组件的更新
+    属性的改变未必会触发组件的更新
+
+    如何去触发组件的更新
+    在tempale中使用到data中定义的状态或者是使用了props中的属性数据，
+
+    计算属性：能够提高性能，发生变化的时候才更新，updated里面计算属性只要不改变就不会重复执行。
+    减少模板中的计算逻辑
+    数据缓存
+    依赖固定的数据类型（响应式数据），即：只有响应式的数据才能写在计算属性里面
+
+    侦听器watch
+    computed能做的，watch都能做，反之则不行
+    能用computed的尽量用computed
+
+    生命周期和应用场景和函数式组件
+    生命周期：创建阶段、更新阶段、销毁阶段
+    创建阶段：beforeCreated\create\beforeMount\mounted
+    更新阶段：beforeUpdated\updated
+    销毁阶段：beforeDestory\destroyed
+    在创建阶段和销毁阶段只会执行一次
+
+    函数式组件
+    functional:true
+    无状态、无实例，没有this上下文，没有生命周期
+
+    内置指令V-text,v-html,
+    v-show v-if v-for v-bind(:)v-on(@),v-model,v-pre,v-once,
+    自定义指令
+    bind
+    inserted
+    update
+    componentUpdated
+    unbind
+
+    常用的高级属性provide/inject:组件通信 节点提供数据，节点注入数据
+
+    通常情况下，父组件向孙组件传递数据，可以采用父子props层层传递，也可以使用bus和vuex直接交互，在vue2.2.0之后，vue提供了provide/inject方式
+
+    ref获取实例
+    递归查找  
+    callback ref
+
+    获取跨层级组件实例
+    
+    如何获取当前组件的实例？为什么要获取组件实例？如何跨层级获取组件实例？
+
+    jsx jacascript语法扩展 {}  
+    template html扩展 {{}}  大量内置指令简化开发
+
+    偏视图表现的组件  使用tempalte
+    偏逻辑的组件  推荐使用jsx或渲染函数
+
+
+
+
+
+
+
+
+    
+
+-->
+
+<body>
+
+</body>
+
+</html>
